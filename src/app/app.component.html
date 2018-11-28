@@ -18,3 +18,19 @@
   </li>
 </ul>
 
+<!-- <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+  <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+</cdk-virtual-scroll-viewport> -->
+<button type="button" (click)="scrollDown()">scroll down</button>
+<button type="button">scroll up</button>
+
+
+<cdk-virtual-scroll-viewport cdk-scrollable itemSize="50" class="example-viewport">
+  <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+</cdk-virtual-scroll-viewport>
+<!-- <div class="container" #scrollable>
+  <ul cdk-scrollable orientation="horizontal" class="example-viewport" style="overflow-y: scroll">
+    <li *ngFor="let item of items" class="example-item">{{item}}</li>
+  </ul>
+</div> -->
+
