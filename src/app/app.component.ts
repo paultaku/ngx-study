@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   @ViewChild(CdkScrollable) scrollable: CdkScrollable;
   title = 'app';
   items = Array.from({length: 50}).map((_, i) => `Item #${i}`);
-  constructor(private scrollDispatcher: ScrollDispatcher) {
+  constructor() {
   }
 
   ngOnInit() {
