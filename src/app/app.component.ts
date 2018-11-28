@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
   }
 
   scrollDown() {
-    console.log(this.scrollable.measureScrollOffset('top'));
     const top = this.scrollable.measureScrollOffset('top');
     this.scrollable.scrollTo({
       top: top + 200
